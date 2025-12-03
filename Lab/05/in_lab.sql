@@ -52,7 +52,23 @@ update employee set proj_id = 2 where emp_id in (2, 5);
 
 select * from employee where proj_id is null;
 
+
+
 -- Q5
+create table student (
+    student_id int primary key,
+    student_name varchar(100),
+    gpa number(3,2),
+    crs_id int,
+    foreign key (crs_id) references course(crs_id)
+);
+
+insert into student values (1, 'Alice', 3.8, null);
+insert into student values (2, 'Bob', 3.5, null);
+insert into student values (3, 'Charlie', 3.9, null);
+insert into student values (4, 'David', 2.9, null);
+insert into student values (5, 'Emma', 3.7, null);
+
 create table course (
     crs_id int primary key,
     crs_name varchar(20)
