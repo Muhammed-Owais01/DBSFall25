@@ -1,7 +1,7 @@
 -- Q1
 create table bank_accounts (
   account_no    number,
-  holder_name   varchar2(50),
+  holder_name   varchar(50),
   balance       number
 );
 
@@ -22,7 +22,7 @@ select * from bank_accounts;
 -- Q2
 create table inventory (
   item_id    number,
-  item_name  varchar2(30),
+  item_name  varchar(30),
   quantity   number
 );
 
@@ -48,7 +48,7 @@ select * from inventory;
 -- Q3
 create table fees (
   student_id   number,
-  name         varchar2(30),
+  name         varchar(30),
   amount_paid  number,
   total_fee    number
 );
@@ -72,7 +72,7 @@ select * from fees;
 -- Q4
 create table products (
   product_id    number,
-  product_name  varchar2(30),
+  product_name  varchar(30),
   stock         number
 );
 
@@ -104,7 +104,7 @@ select * from orders;
 -- Q5
 create table employees (
   emp_id    number,
-  emp_name  varchar2(30),
+  emp_name  varchar(30),
   salary    number
 );
 
